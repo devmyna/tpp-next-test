@@ -28,6 +28,57 @@ function App() {
           />
           <img src={qrCode} className={styles.qrCode} />
         </div>
+        <h1>Survey</h1>
+          <div className="box_con02">
+              <form method="post" action="mail.php">
+                  <table className="formTable">
+                      <tr>
+                          <th>確認</th>
+                          <td>
+                              <div className="box_br">
+                                  <label>
+                                      <input type="radio" name="gender" value="テキスト1"/>
+                                      テキスト1
+                                  </label>
+                              </div>
+                              <div className="box_br">
+                                  <label>
+                                      <input type="radio" name="gender" value="テキスト2" />
+                                          テキスト2
+                                  </label>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th>ご用件</th>
+                          <td><select name="ご用件">
+                              <option value="">選択してください</option>
+                              <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+                              <option value="リンクについて">リンクについて</option>
+                          </select></td>
+                      </tr>
+                      <tr>
+                          <th>お名前<span>必須</span></th>
+                          <td><input size="20" type="text" className="wide" name="お名前"/></td>
+                      </tr>
+                      <tr>
+                          <th>電話番号（半角）<span>必須</span></th>
+                          <td><input size="30" type="text" className="wide" name="電話番号"/></td>
+                      </tr>
+                      <tr>
+                          <th>Mail（半角）</th>
+                          <td><input size="30" type="text" className="wide" name="Email"/></td>
+                      </tr>
+                      <tr>
+                          <th>お問い合わせ内容<br/></th>
+                          <td><textarea name="お問い合わせ内容" cols="50" rows="5"></textarea></td>
+                      </tr>
+                  </table>
+                  <p className="btn">
+                      <span><input type="submit" value="　 確認 　"/></span>
+                  </p>
+              </form>
+          </div>
         <h1>Client APIs</h1>
         {!isLoggedIn ? (
           <Snippet

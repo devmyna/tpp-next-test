@@ -1,6 +1,8 @@
 import { UserConfigExport, ServerOptions } from 'vite'
 import react from '@vitejs/plugin-react'
 import { certificateFor } from 'devcert'
+// import { resolve } from 'path'
+// import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default async (): Promise<UserConfigExport> => {
@@ -20,3 +22,9 @@ export default async (): Promise<UserConfigExport> => {
     server,
   }
 }
+
+// const root = resolve(__dirname, 'src')
+//
+// export default defineConfig({
+//   root,
+// })
