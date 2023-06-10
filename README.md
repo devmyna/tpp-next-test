@@ -2,7 +2,7 @@
 
 This is a web application that allows you to try out the basic features of the [LINE Front-end Framework (LIFF)](https://developers.line.biz/en/docs/liff/overview/). For example, you can deploy the following playground to your server.
 
-* [LIFF Playground](https://liff-playground.netlify.app)
+* [LIFF(tpp-next-test) Playground](https://liff-playground.netlify.app)
 
 ## Table of contents
 
