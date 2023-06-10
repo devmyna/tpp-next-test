@@ -44,7 +44,7 @@ function App() {
                               <div className="box_br">
                                   <label>
                                       <input type="radio" name="gender" value="テキスト2" />
-                                          テキスト2
+                                      テキスト2
                                   </label>
                               </div>
                           </td>
@@ -59,19 +59,19 @@ function App() {
                       </tr>
                       <tr>
                           <th>お名前<span>必須</span></th>
-                          <td><input size="20" type="text" className="wide" name="お名前"/></td>
+                          <td><input size={20} type="text" className="wide" name="お名前"/></td>
                       </tr>
                       <tr>
                           <th>電話番号（半角）<span>必須</span></th>
-                          <td><input size="30" type="text" className="wide" name="電話番号"/></td>
+                          <td><input size={30} type="text" className="wide" name="電話番号"/></td>
                       </tr>
                       <tr>
                           <th>Mail（半角）</th>
-                          <td><input size="30" type="text" className="wide" name="Email"/></td>
+                          <td><input size={30} type="text" className="wide" name="Email"/></td>
                       </tr>
                       <tr>
                           <th>お問い合わせ内容<br/></th>
-                          <td><textarea name="お問い合わせ内容" cols="50" rows="5"></textarea></td>
+                          <td><textarea name="お問い合わせ内容" cols={50} rows={5}></textarea></td>
                       </tr>
                   </table>
                   <p className="btn">
